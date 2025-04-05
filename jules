@@ -1,5 +1,0 @@
-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-6, 3, -5)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame += game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector * 0.5
-task.wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4, 14, -211)
-game:GetService("TeleportService"):Teleport(17297111758)
