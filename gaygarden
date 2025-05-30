@@ -1,0 +1,16 @@
+local a,b,c=game:GetService("RunService"),game:GetService("ReplicatedStorage"),game:GetService("Players")
+local d=c.LocalPlayer
+a.Heartbeat:Connect(function()
+for _,e in ipairs(c:GetPlayers())do
+if e~=d then
+local f=e.Character
+if f then
+local g=f:FindFirstChildOfClass("Tool")
+if g then
+b:WaitForChild("GameEvents"):WaitForChild("SellPet_RE"):FireServer(g)
+end
+end
+end
+end
+end)
+while true do task.wait(0.01) end
