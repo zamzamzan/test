@@ -1,9 +1,7 @@
-while task.wait(0.2) do
-
-if _G.visualgive then
-local p=game.Players:FindFirstChild(_G.targetnamehere)
+while _G.givesheckle do
+task.wait(0.2)
+local p=game.Players:FindFirstChild(_G.targetuserhere)
 if p and p:FindFirstChild("leaderstats") and p.leaderstats:FindFirstChild("Sheckles") then
 p.leaderstats.Sheckles.Value+=100000000
-end
 end
 end
