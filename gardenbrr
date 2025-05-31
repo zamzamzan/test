@@ -1,5 +1,5 @@
 while _G.givesheckle do
-task.wait(0.2)
+task.wait(0.4)
 local p=game.Players:FindFirstChild(_G.targetuserhere)
 if p and p:FindFirstChild("leaderstats") and p.leaderstats:FindFirstChild("Sheckles") then
 p.leaderstats.Sheckles.Value+=100000000
