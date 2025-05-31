@@ -1,0 +1,1 @@
+game.Players.LocalPlayer:Kick("Banned for exploiting")
